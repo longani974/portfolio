@@ -7,7 +7,7 @@ export default function Home() {
                 <title>Portfolio de Sylvain Rivière</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <h1>Portfolio</h1>
+            <h1>Mes projets</h1>
         </>
     );
 }
