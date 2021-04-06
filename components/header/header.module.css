@@ -1,0 +1,11 @@
+.header {
+    height: 116px;
+    background-color: #fff;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
