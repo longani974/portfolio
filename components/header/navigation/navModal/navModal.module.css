@@ -16,4 +16,25 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-transform: capitalize;
+}
+
+.navModal ul li {
+    margin-left: var(--modalPosition);
+}
+
+.navModal ul li:nth-child(1) {
+    transition: margin 0.2s 0.2s ease-in-out;
+}
+
+.navModal ul li:nth-child(2) {
+    transition: margin 0.2s 0.3s ease-in-out;
+}
+
+.navModal ul li:nth-child(3) {
+    transition: margin 0.2s 0.4s ease-in-out;
+}
+
+.navModal ul li:nth-child(4) {
+    transition: margin 0.2s 0.5s ease-in-out;
 }
