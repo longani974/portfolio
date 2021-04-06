@@ -4,7 +4,7 @@
     --primaryColor: hsl(205, 92%, 45%, 1);
     --black: hsl(0, 1%, 6%, 1);
     --grey: hsl(0, 0%, 52%, 1);
-    --darkGrey: hsl(0, 0%, 32%, 1);
+    --darkGrey: hsl(191, 17%, 21%, 1);
 
     --wrapperWidth: 1080px;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .innerWrapper {
-    margin: auto;
+    margin: 0 auto;
     max-width: var(--wrapperWidth);
 }
 
@@ -29,4 +29,14 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 1150px) {
+    :root {
+        --wrapperWidth: 805px;
+    }
+
+    .innerWrapper {
+        margin: 0 5px;
+    }
 }

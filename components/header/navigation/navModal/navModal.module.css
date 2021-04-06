@@ -1,0 +1,19 @@
+.navModal {
+    position: absolute;
+    background-color: var(--primaryColor);
+    height: 100vh;
+    width: 80vw;
+    top: 0;
+    left: var(--modalPosition);
+    transition: left 0.3s ease-in-out;
+    color: white;
+}
+
+.navModal ul {
+    margin-top: 50px;
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
