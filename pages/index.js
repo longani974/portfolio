@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import styles from './index.module.css';
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -28,62 +29,23 @@ export default function Home() {
             </Head>
             <div className="innerWrapper">
                 <main>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
-                    <h1>Portfolio</h1>
+                    <div className={styles.titleBox}>
+                        <h3>Bonjour, je suis Sylvain.</h3>
+                        <h1>
+                            Développeur web{' '}
+                            <span style={{ whiteSpace: 'nowrap' }}>
+                                front-end
+                            </span>
+                        </h1>
+                        <div className={styles.trait}>
+                            <Image
+                                src="/images/trait.svg"
+                                width={296}
+                                height={27}
+                            />
+                        </div>
+                        <h4>Saint-Pierre, Ile de la Réunion</h4>
+                    </div>
                 </main>
             </div>
         </>

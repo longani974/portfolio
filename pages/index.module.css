@@ -1,0 +1,40 @@
+.titleBox {
+    max-width: 558px;
+}
+
+.trait {
+    position: relative;
+    top: -5px;
+    left: 45px;
+    transform: scale(1.32);
+}
+
+@media screen and (max-width: 715px) {
+    .titleBox {
+        max-width: 310px;
+    }
+
+    .trait {
+        position: relative;
+        top: -10px;
+        left: -48px;
+        transform: scale(0.87);
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .trait {
+        max-width: 200px;
+        top: -2px;
+        left: 0px;
+        transform: scale(1.3);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .trait {
+        top: -5px;
+        left: -10px;
+        transform: scale(1.15);
+    }
+}
