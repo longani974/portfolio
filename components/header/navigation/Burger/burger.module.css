@@ -38,10 +38,6 @@
     transition: transform 0.2s ease-out, top 0.2s 0.2s ease-out;
 }
 
-.active {
-    display: var(--cross);
-}
-
 .active .wrapperBurger div:nth-child(1) {
     top: 8px;
     transform: rotate(-45deg);

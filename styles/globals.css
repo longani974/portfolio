@@ -35,8 +35,10 @@ a {
     :root {
         --wrapperWidth: 805px;
     }
+}
 
+@media screen and (max-width: 820px) {
     .innerWrapper {
-        margin: 0 5px;
+        padding: 0 24px;
     }
 }

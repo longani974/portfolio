@@ -20,12 +20,23 @@
     display: none;
 }
 
-@media screen and (max-width: 850px) {
-    .navBar ul {
+.navModal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .navBar {
         display: none;
     }
 
     .navBurger {
+        display: block;
+    }
+
+    .navModal {
         display: block;
     }
 }

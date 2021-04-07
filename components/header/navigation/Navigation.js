@@ -23,10 +23,12 @@ function Navigation() {
                     toggleBurgerIsActive={toggleBurgerIsActive}
                 />
             </div>
-            <NavModal
-                burgerIsActive={burgerIsActive}
-                toggleBurgerIsActive={toggleBurgerIsActive}
-            />
+            <div className={styles.navModal}>
+                <NavModal
+                    burgerIsActive={burgerIsActive}
+                    toggleBurgerIsActive={toggleBurgerIsActive}
+                />
+            </div>
         </>
     );
 }
