@@ -1,6 +1,8 @@
 .header {
+    position: relative;
     height: 116px;
     background-color: #fff;
+    z-index: 2;
 }
 
 .wrapper {
