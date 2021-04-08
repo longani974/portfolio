@@ -7,6 +7,7 @@
     --darkGrey: hsl(191, 17%, 21%, 1);
 
     --wrapperWidth: 1080px;
+    --h1MarginBottom: 74px;
 }
 
 html,
@@ -49,6 +50,20 @@ h4 {
     letter-spacing: -0.04em;
     color: var(--grey);
     margin: -10px 0 43px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 114.3%;
+    margin-bottom: 36px;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--darkGrey);
 }
 
 .innerWrapper {
