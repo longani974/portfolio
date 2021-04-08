@@ -73,6 +73,15 @@ export default function MesProjets({ data }) {
                         })}
                     </section>
                     <CardMeContacter className={styles.cardContact} />
+                    <div className={styles.scrollTopBtn}>
+                        <a href="#">
+                            <Image
+                                src="/images/scroll-top-btn.png"
+                                width={94}
+                                height={94}
+                            ></Image>
+                        </a>
+                    </div>
                 </main>
             </div>
         </>
