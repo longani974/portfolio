@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 54px;
+    margin-bottom: 60px;
 }
 
 .h1Important {
@@ -41,7 +42,6 @@
 .btn {
     align-self: flex-end;
 }
-
 @media screen and (max-width: 1155px) {
     .projets {
         gap: 48px;

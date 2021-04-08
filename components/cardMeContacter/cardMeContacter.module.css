@@ -1,0 +1,31 @@
+.card {
+    padding: 56px 163px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.card p {
+    font-size: 20px;
+    line-height: 140%;
+    color: black;
+}
+
+@media screen and (max-width: 1155px) {
+    .card {
+        padding: 56px 34px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0;
+        height: 212px;
+        text-align: center;
+    }
+}
