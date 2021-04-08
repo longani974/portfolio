@@ -9,25 +9,44 @@
     transform: scale(1.32);
 }
 
-@media screen and (max-width: 715px) {
-    .titleBox {
-        max-width: 310px;
+.manAndCatImage {
+    max-width: 631px;
+    aspect-ratio: 631/384;
+    margin-top: -150px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1150px) {
+    .manAndCatImage {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .trait {
+        max-width: 300px;
+        top: -2px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .manAndCatImage {
+        margin-top: 50px;
     }
 
     .trait {
-        position: relative;
-        top: -10px;
-        left: -48px;
-        transform: scale(0.87);
+        max-width: 200px;
+        top: -2px;
+        left: 0px;
     }
 }
 
 @media screen and (max-width: 340px) {
     .trait {
         max-width: 200px;
-        top: -2px;
-        left: 0px;
-        transform: scale(1.3);
     }
 }
 

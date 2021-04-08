@@ -23,7 +23,7 @@
     left: -20%;
     /* left: 105%; */
     background-color: rgba(255, 255, 255, 0.582);
-    transform: rotate(45deg);
+    transform: rotate(-13deg);
     transition: left 0s;
 }
 

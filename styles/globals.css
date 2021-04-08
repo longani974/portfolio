@@ -75,7 +75,8 @@ h4 {
     }
 
     h4 {
-        margin-top: 71px;
+        margin-top: 50px;
+        margin-bottom: 14px;
     }
 }
 
@@ -94,10 +95,19 @@ h4 {
 }
 
 @media screen and (max-width: 715px) {
+    h4 {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.04em;
+    }
+}
+
+@media screen and (max-width: 585px) {
     h1 {
-        font-size: 40px;
+        font-size: 58px;
         line-height: 114.3%;
         max-width: 292px;
+        margin-top: 0;
     }
 
     h3 {
@@ -108,9 +118,15 @@ h4 {
     }
 
     h4 {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.04em;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    h1 {
+        font-size: 40px;
+        line-height: 114.3%;
+        max-width: 292px;
     }
 }
 

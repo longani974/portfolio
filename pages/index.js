@@ -2,7 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from './index.module.css';
 import { useEffect } from 'react';
-import Button from '../components/ui/logo/button/button';
+import Button from '../components/ui/button/button';
+import ManAndCatImage from '../components/ui/manAndCatImage/ManAndCatImage';
+import Link from 'next/link';
 
 export default function Home() {
     // Ajoute l'image en background à body et on le supprime lorsque le composant est démonté
@@ -46,7 +48,14 @@ export default function Home() {
                             />
                         </div>
                         <h4>Saint-Pierre, Ile de la Réunion</h4>
-                        <Button>Mes projets</Button>
+                        <Link href="/mes-projets">
+                            <a>
+                                <Button>Mes projets</Button>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={styles.manAndCatImage}>
+                        <ManAndCatImage />
                     </div>
                 </main>
             </div>
