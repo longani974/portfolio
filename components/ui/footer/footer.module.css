@@ -1,5 +1,5 @@
 .footer {
-    margin: 100px auto 10px;
-    width: fit-content;
+    margin: 100px 10px 10px;
+    text-align: center;
     color: var(--grey);
 }
