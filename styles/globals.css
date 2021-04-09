@@ -5,6 +5,7 @@
     --black: hsl(0, 1%, 6%, 1);
     --grey: hsl(0, 0%, 52%, 1);
     --darkGrey: hsl(191, 17%, 21%, 1);
+    --lightGrey: #f9f9f9;
 
     --wrapperWidth: 1080px;
     --h1MarginBottom: 74px;
@@ -15,7 +16,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
+    background-color: var(--lightGrey);
 }
 
 a {
