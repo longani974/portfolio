@@ -79,6 +79,7 @@ p {
 @media screen and (max-width: 1150px) {
     :root {
         --wrapperWidth: 805px;
+        --h1MarginBottom: 44px;
     }
 
     h1 {
@@ -138,6 +139,11 @@ p {
 }
 
 @media screen and (max-width: 435px) {
+    :root {
+        --wrapperWidth: 805px;
+        --h1MarginBottom: 32px;
+    }
+
     h1 {
         font-size: 40px;
         line-height: 114.3%;

@@ -1,0 +1,86 @@
+.h1Important {
+    margin-bottom: var(--h1MarginBottom);
+    max-width: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portrait {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 26px 26px var(--primaryColor);
+}
+
+.contenu {
+    max-width: 555px;
+}
+
+.contenu a {
+    display: inline-block;
+    margin-top: 34px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1155px) {
+    .portrait {
+        width: 293px;
+        height: 293px;
+        box-shadow: 15px 15px var(--primaryColor);
+    }
+
+    .contenu {
+        max-width: 403px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .portrait {
+        width: 163px;
+        height: 163px;
+        box-shadow: 10px 10px var(--primaryColor);
+    }
+
+    .contenu {
+        margin-top: -183px;
+        max-width: 100%;
+    }
+
+    .contenu::before {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .portrait {
+        align-self: center;
+    }
+
+    .contenu a {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lawngreen;
+    }
+
+    .contenu::before {
+        float: initial;
+    }
+}
