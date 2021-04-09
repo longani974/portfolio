@@ -1,0 +1,5 @@
+.footer {
+    margin: 100px auto 10px;
+    width: fit-content;
+    color: var(--grey);
+}
