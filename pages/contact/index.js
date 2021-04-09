@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Button from '../../components/ui/button/button';
+import Button from '../../components/ui/button/Button';
 import styles from './styles.module.css';
 
 export default function Contact() {

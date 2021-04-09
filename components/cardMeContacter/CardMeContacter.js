@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Button from '../ui/button/button';
+import Button from '../ui/button/Button';
 import styles from './cardMeContacter.module.css';
 
 function CardMeContacter() {

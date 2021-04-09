@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from './index.module.css';
 import { useEffect } from 'react';
-import Button from '../components/ui/button/button';
+import Button from '../components/ui/button/Button';
 import ManAndCatImage from '../components/ui/manAndCatImage/ManAndCatImage';
 import Link from 'next/link';
 

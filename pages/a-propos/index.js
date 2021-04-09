@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Button from '../../components/ui/button/button';
+import Button from '../../components/ui/button/Button';
 import styles from './styles.module.css';
 import { useRouter } from 'next/router';
 import Image from 'next/image';

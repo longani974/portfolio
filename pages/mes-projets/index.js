@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 import data from '../../data/project.json';
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from '../../components/ui/button/button';
+import Button from '../../components/ui/button/Button';
 import CardMeContacter from '../../components/cardMeContacter/CardMeContacter';
 
 export default function MesProjets({ data }) {
