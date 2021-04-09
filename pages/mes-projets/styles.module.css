@@ -7,6 +7,7 @@
 
 .h1Important {
     margin-bottom: var(--h1MarginBottom);
+    max-width: none;
 }
 
 .projet {
