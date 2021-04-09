@@ -26,7 +26,7 @@
     border-radius: 50px;
 }
 
-@media screen and (max-width: 1155px) {
+@media screen and (max-width: 1150px) {
     .portrait {
         width: 293px;
         height: 293px;
@@ -38,7 +38,32 @@
     }
 }
 
-@media screen and (max-width: 760px) {
+/* @media screen and (max-width: 770px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .portrait {
+        width: 220px;
+        height: 220px;
+        box-shadow: 10px 10px var(--primaryColor);
+    }
+
+    .contenu {
+        margin-top: -240px;
+        max-width: 100%;
+    }
+
+    .contenu::before {
+        content: '';
+        display: block;
+        width: 250px;
+        height: 230px;
+        float: left;
+    }
+} */
+
+@media screen and (max-width: 770px) {
     .container {
         flex-direction: column-reverse;
     }
