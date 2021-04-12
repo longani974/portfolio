@@ -6,6 +6,7 @@
     --grey: hsl(0, 0%, 52%, 1);
     --darkGrey: hsl(191, 17%, 21%, 1);
     --lightGrey: #f9f9f9;
+    --alert: rgb(238, 63, 63);
 
     --wrapperWidth: 1080px;
     --h1MarginBottom: 74px;

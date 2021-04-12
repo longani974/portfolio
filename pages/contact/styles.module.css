@@ -4,6 +4,7 @@
 }
 
 .form {
+    --spacingLeft: 33.5px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -18,11 +19,11 @@
 .form textarea {
     width: 448px;
     height: 67px;
-    border-radius: 33.5px;
+    border-radius: var(--spacingLeft);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     background-color: var(--lightGrey);
     border: 1px solid rgb(238, 238, 238);
-    padding-left: 33.5px;
+    padding-left: var(--spacingLeft);
     outline: none;
     transition: box-shadow 0.2s ease-out;
 }
@@ -63,6 +64,15 @@
     position: absolute;
     right: -40px;
     top: -40px;
+}
+
+.error {
+    margin-left: var(--spacingLeft);
+    color: var(--alert);
+}
+
+.inputError {
+    box-shadow: 0 0 0 1px var(--alert) !important;
 }
 
 @media screen and (max-width: 1150px) {
