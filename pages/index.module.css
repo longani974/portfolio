@@ -1,59 +1,59 @@
 .titleBox {
-    max-width: 558px;
+  max-width: 558px;
 }
 
 .trait {
-    position: relative;
-    top: -5px;
-    left: 45px;
-    transform: scale(1.32);
+  position: relative;
+  top: -5px;
+  left: 45px;
+  transform: scale(1.32);
 }
 
 .manAndCatImage {
-    max-width: 631px;
-    aspect-ratio: 631/384;
-    margin-top: -150px;
-    display: block;
-    position: relative;
-    margin-left: auto;
+  max-width: 631px;
+  aspect-ratio: 631/384;
+  margin-top: -150px;
+  display: block;
+  position: relative;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 1150px) {
-    .manAndCatImage {
-        margin-top: 0px;
-    }
+  .manAndCatImage {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 735px) {
-    .trait {
-        max-width: 300px;
-        top: -2px;
-        left: 0px;
-    }
+  .trait {
+    max-width: 300px;
+    top: -2px;
+    left: 0px;
+  }
 }
 
 @media screen and (max-width: 435px) {
-    .manAndCatImage {
-        margin-top: 50px;
-    }
+  .manAndCatImage {
+    margin-top: 50px;
+  }
 
-    .trait {
-        max-width: 200px;
-        top: -2px;
-        left: 0px;
-    }
+  .trait {
+    max-width: 200px;
+    top: -2px;
+    left: 0px;
+  }
 }
 
 @media screen and (max-width: 340px) {
-    .trait {
-        max-width: 200px;
-    }
+  .trait {
+    max-width: 200px;
+  }
 }
 
 @media screen and (max-width: 300px) {
-    .trait {
-        top: -5px;
-        left: -10px;
-        transform: scale(1.15);
-    }
+  .trait {
+    top: -5px;
+    left: -10px;
+    transform: scale(1.15);
+  }
 }

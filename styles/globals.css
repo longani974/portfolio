@@ -29,6 +29,15 @@ a {
   box-sizing: border-box;
 }
 
+.animateLetter {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.animateLetter:hover {
+  transform: translateY(-15px);
+}
+
 h1 {
   font-weight: bold;
   font-size: 60px;
