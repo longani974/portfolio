@@ -1,121 +1,129 @@
 .h1Important {
-    margin-bottom: var(--h1MarginBottom);
-    max-width: none;
+  margin-bottom: var(--h1MarginBottom);
+  max-width: none;
 }
 
 .form {
-    --spacingLeft: 33.5px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    background-repeat: 20px;
-    padding: 26px 55px 42px;
-    position: relative;
-    border-radius: 20px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  --spacingLeft: 33.5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-repeat: 20px;
+  padding: 26px 55px 42px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form input,
 .form textarea {
-    width: 448px;
-    height: 67px;
-    border-radius: var(--spacingLeft);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: var(--lightGrey);
-    border: 1px solid rgb(238, 238, 238);
-    padding-left: var(--spacingLeft);
-    outline: none;
-    transition: box-shadow 0.2s ease-out;
+  width: 448px;
+  height: 67px;
+  border-radius: var(--spacingLeft);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--lightGrey);
+  border: 1px solid rgb(238, 238, 238);
+  padding-left: var(--spacingLeft);
+  outline: none;
+  transition: box-shadow 0.2s ease-out;
 }
 
 .form input:focus,
 .form textarea:focus {
-    box-shadow: 0 0 0 1px var(--primaryColor);
+  box-shadow: 0 0 0 1px var(--primaryColor);
 }
 
 .form input::placeholder,
 .form textarea::placeholder,
 .message {
-    color: var(--darkGrey);
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+  color: var(--darkGrey);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .form label {
-    opacity: 0;
+  opacity: 0;
 }
 
 .message {
-    padding-top: 16px;
-    min-width: 100%;
-    min-height: 279px;
-    margin-bottom: 43px;
+  padding-top: 16px;
+  min-width: 100%;
+  min-height: 279px;
+  margin-bottom: 43px;
 }
 
 .message {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
-.btn {
-    margin-top: 43px;
+.footerForm {
+  margin-top: 43px;
 }
 
 .image {
-    position: absolute;
-    right: -40px;
-    top: -40px;
+  position: absolute;
+  right: -40px;
+  top: -40px;
 }
 
 .error {
-    margin-left: var(--spacingLeft);
-    color: var(--alert);
+  margin-left: var(--spacingLeft);
+  color: var(--alert);
 }
 
 .inputError {
-    box-shadow: 0 0 0 1px var(--alert) !important;
+  box-shadow: 0 0 0 1px var(--alert) !important;
+}
+
+.errorSend {
+  color: var(--alert);
+}
+
+.btn {
+  margin-right: 15px;
 }
 
 @media screen and (max-width: 1150px) {
-    .wrapper {
-        width: 100%;
-        overflow-x: hidden;
-    }
+  .wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-    .image {
-        width: 534px;
-        right: -130px;
-    }
+  .image {
+    width: 534px;
+    right: -130px;
+  }
 
-    .form input,
-    .form textarea {
-        width: 331px;
-    }
+  .form input,
+  .form textarea {
+    width: 331px;
+  }
 }
 
 @media screen and (max-width: 820px) {
-    .image {
-        width: 420px;
-        right: -100px;
-        top: 15px;
-    }
+  .image {
+    width: 420px;
+    right: -100px;
+    top: 15px;
+  }
 }
 
 @media screen and (max-width: 750px) {
-    .wrapper {
-        width: 100%;
-        overflow-x: hidden;
-    }
+  .wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-    .image {
-        display: none;
-    }
+  .image {
+    display: none;
+  }
 
-    .form input,
-    .form textarea {
-        width: 100%;
-    }
+  .form input,
+  .form textarea {
+    width: 100%;
+  }
 
-    .form {
-        padding: 0px 15px 16px;
-    }
+  .form {
+    padding: 0px 15px 16px;
+  }
 }
