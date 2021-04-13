@@ -22,6 +22,20 @@
   animation-iteration-count: infinite;
 }
 
+.avantBras {
+  animation: avantBras;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.hautBras {
+  transform-origin: 75% 60%;
+
+  animation: hautBras;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
 .svgContent {
   display: inline-block;
   position: absolute;
@@ -41,5 +55,41 @@
   }
   100% {
     transform: scaleY(1);
+  }
+}
+
+@keyframes avantBras {
+  0% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(0px);
+  }
+  89% {
+    transform: translateX(-85px);
+  }
+  91% {
+    transform: translateX(-85px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes hautBras {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  89% {
+    transform: rotate(41deg);
+  }
+  91% {
+    transform: rotate(41deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
