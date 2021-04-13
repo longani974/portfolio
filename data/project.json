@@ -1,6 +1,7 @@
 [
     {
         "titre": "Lost in space",
+        "id": "lost-in-space",
         "text": ["Lost in space est mon premier projet en JavaScript. Il s’agit d’un jeu où vous êtes à bord d’un petit vaisseau. Le but est de détruire les astéroides qui arrivent pour protéger le vaiseau mère.", "Grâce à se projet, j’ai appris énormément sur le fonctionnement de JavaScript. Les défis ont été nombreux, mais c’est avec ce jeu que j’ai appris le plus."],
         "technologies": "Vanilla JavaScript, Api Canvas",
         "img": "lost-in-space.png",
@@ -10,6 +11,7 @@
     },
     {
         "titre": "BasketBall Better Shooter",
+        "id":"basketBall-better-shooter",
         "text": ["Basketball better shooter est une application web où vous suivez vos performances au tir au basket. Vous choisissez votre position, ensuite le nombre de tirs que vous allez tentez puis vos tirs réussis.", "L’application envoi ensuite votre résultat dans une database et vous pouvez ainsi suivre votre progression.", "ps: le rendu est optimal sur mobile car on apporte rarement son pc sur un terrain."],
         "technologies": "React, Redux, Firebase",
         "img": "better-shooter.png",
@@ -19,6 +21,7 @@
     },
     {
         "titre": "Scooter Sharing",
+        "id": "scooter-sharing",
         "text": ["Scooter sharing est un site multi-pages construit à partir d’une maquette que l’on peut trouver sur FrontEnd Mentor.","J’ai donc suivi la maquette fournie pour que le résultat lui soit fidèle.", "J’ai adapté l’accordéon que vous pouvez voir en bas de cette page, pour qu’il fonctionne sous React."],
         "technologies": "GatsbyJS",
         "img": "scoot.png",
@@ -28,6 +31,7 @@
     },
     {
         "titre": "Todo App",
+        "id": "todo-app",
         "text": ["Todo app comme son nom l’indique est une web app pour faire votre todo list.", "Vous pouvez ajouter une tâche à effectuer, puis la marquer comme complétée et enfin la supprimer.", "Il est possible aussi de réorganiser les tâches grâce à un drag and drop. Enfin, vous pouvez choisir d’ afficher uniquement les tâches non effectuées ou celles déjà complétées."],
         "technologies": "React",
         "img": "todo.png",
@@ -37,6 +41,7 @@
     },
     {
         "titre": "Accordéon Faq",
+        "id": "accordeon-faq",
         "text": ["Il s’agit ici d’un composant accordéon.","Lorsque que l’on clique sur une flèche un texte apparaît en poussant le reste du contenu vers le bas de façon progressive.","Ici, le défi a été de faire en sorte que les éléments puissent changer de taille progressivement. Pour ça, j’ai dû utiliser JavaScript."],
         "technologies": "React",
         "img": "faq-accordeon.png",

@@ -46,8 +46,6 @@ export default function Home() {
     });
 
     lettersSelector.innerHTML = animateLetters.join('');
-
-    console.log(lettersSelector);
   }, []);
 
   return (

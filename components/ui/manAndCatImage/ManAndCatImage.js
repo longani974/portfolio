@@ -1,6 +1,39 @@
 import styles from './manAndCatImage.module.css';
+import { useRouter } from 'next/router';
 
 function ManAndCatImage() {
+  const router = useRouter();
+
+  function goToProjectHandler(e) {
+    const ecran = document.querySelector(`.${styles.ecran}`);
+    const compStyles = window.getComputedStyle(ecran);
+    const param = compStyles.getPropertyValue('fill');
+
+    switch (param) {
+      case 'url("#image1")':
+        router.push('/mes-projets#todo-app');
+        break;
+
+      case 'url("#image2")':
+        router.push('/mes-projets#lost-in-space');
+        break;
+
+      case 'url("#image3")':
+        router.push('/mes-projets#accordeon-faq');
+        break;
+
+      case 'url("#image4")':
+        router.push('/mes-projets#scooter-sharing');
+        break;
+
+      case 'url("#image5")':
+        router.push('/mes-projets#basketBall-better-shooter');
+        break;
+
+      default:
+        break;
+    }
+  }
   return (
     <svg
       viewBox="0 0 631 384"
@@ -831,10 +864,11 @@ function ManAndCatImage() {
           fill="#91DCDC"
         />
         <path
+          onClick={goToProjectHandler}
           className={styles.ecran}
           id="Vector_136"
           d="M32.3699 307.62H257.4C261.785 307.62 265.34 304.065 265.34 299.68V147.73C265.34 143.345 261.785 139.79 257.4 139.79H32.3699C27.9848 139.79 24.4299 143.345 24.4299 147.73V299.68C24.4299 304.065 27.9848 307.62 32.3699 307.62Z"
-          //   fill="url(#image1)"
+          fill="url(#image1)"
         />
         <path
           id="Vector_137"
