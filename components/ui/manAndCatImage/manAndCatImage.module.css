@@ -1,16 +1,38 @@
 #cheveux {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #cheveux:active,
 #cheveux:hover {
-    opacity: 0.2;
+  opacity: 0.2;
+}
+
+.oeuilChat {
+  transform-origin: 0% 45%;
+  animation: catEyes;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .svgContent {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes catEyes {
+  0% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(1);
+  }
+  97.5% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
