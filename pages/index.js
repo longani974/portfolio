@@ -82,6 +82,13 @@ export default function Home() {
           </div>
           <div className={styles.manAndCatImage}>
             <ManAndCatImage />
+            {/* <div className={styles.imgPc}>
+              <Image
+                src="/images/Desktop-Dark-Active.png"
+                width={239}
+                height={168}
+              />
+            </div> */}
           </div>
         </main>
       </div>

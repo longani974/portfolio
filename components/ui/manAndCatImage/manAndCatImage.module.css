@@ -43,6 +43,13 @@
   left: 0;
 }
 
+.ecran {
+  animation: ecran;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.9s;
+}
+
 @keyframes clignement {
   0% {
     transform: scaleY(1);
@@ -91,5 +98,25 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes ecran {
+  0% {
+    fill: url(#image1);
+  }
+  20% {
+    fill: url(#image2);
+  }
+  40% {
+    fill: url(#image3);
+  }
+  60% {
+    fill: url(#image4);
+  }
+  80% {
+    fill: url(#image5);
+  }
+  100% {
+    fill: url(#image1);
   }
 }

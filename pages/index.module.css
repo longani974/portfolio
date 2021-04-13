@@ -18,6 +18,15 @@
   margin-left: auto;
 }
 
+.imgPc {
+  height: 168px;
+  position: absolute;
+  top: 140px;
+  left: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1150px) {
   .manAndCatImage {
     margin-top: 0px;

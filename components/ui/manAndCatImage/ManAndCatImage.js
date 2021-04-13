@@ -9,6 +9,88 @@ function ManAndCatImage() {
       className={styles.svgContent}
       xmlns="http://www.w3.org/2000/svg"
     >
+      <defs>
+        <pattern
+          id="image1"
+          patternUnits="userSpaceOnUse"
+          width="239"
+          height="168"
+          x="25"
+          y="-29"
+        >
+          <image
+            href="/images/todoDesktop.png"
+            x="0"
+            y="0"
+            width="239"
+            height="168"
+          />
+        </pattern>
+        <pattern
+          id="image2"
+          patternUnits="userSpaceOnUse"
+          width="239"
+          height="168"
+          x="25"
+          y="-29"
+        >
+          <image
+            href="/images/lost-in-space-desktop-home-min.png"
+            x="0"
+            y="0"
+            width="239"
+            height="168"
+          />
+        </pattern>
+        <pattern
+          id="image3"
+          patternUnits="userSpaceOnUse"
+          width="239"
+          height="168"
+          x="25"
+          y="-29"
+        >
+          <image
+            href="/images/faq-min.png"
+            x="0"
+            y="0"
+            width="239"
+            height="168"
+          />
+        </pattern>
+        <pattern
+          id="image4"
+          patternUnits="userSpaceOnUse"
+          width="239"
+          height="168"
+          x="25"
+          y="-29"
+        >
+          <image
+            href="/images/scoot-min.png"
+            x="0"
+            y="0"
+            width="239"
+            height="168"
+          />
+        </pattern>
+        <pattern
+          id="image5"
+          patternUnits="userSpaceOnUse"
+          width="239"
+          height="168"
+          x="25"
+          y="-29"
+        >
+          <image
+            href="/images/better-shooter-min.png"
+            x="0"
+            y="0"
+            width="239"
+            height="168"
+          />
+        </pattern>
+      </defs>
       <g id="Group">
         <path
           id="Vector"
@@ -749,9 +831,10 @@ function ManAndCatImage() {
           fill="#91DCDC"
         />
         <path
+          className={styles.ecran}
           id="Vector_136"
           d="M32.3699 307.62H257.4C261.785 307.62 265.34 304.065 265.34 299.68V147.73C265.34 143.345 261.785 139.79 257.4 139.79H32.3699C27.9848 139.79 24.4299 143.345 24.4299 147.73V299.68C24.4299 304.065 27.9848 307.62 32.3699 307.62Z"
-          fill="#B4E4F9"
+          //   fill="url(#image1)"
         />
         <path
           id="Vector_137"
