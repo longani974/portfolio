@@ -10,8 +10,15 @@
 
 .oeuilChat {
   transform-origin: 0% 45%;
-  animation: catEyes;
+  animation: clignement;
   animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.menEyes {
+  transform-origin: 0% 28%;
+  animation: clignement;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
@@ -22,7 +29,7 @@
   left: 0;
 }
 
-@keyframes catEyes {
+@keyframes clignement {
   0% {
     transform: scaleY(1);
   }
