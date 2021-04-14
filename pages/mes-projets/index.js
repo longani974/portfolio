@@ -6,8 +6,14 @@ import data from '../../data/project.json';
 import Image from 'next/image';
 import Button from '../../components/ui/button/Button';
 import CardMeContacter from '../../components/cardMeContacter/CardMeContacter';
+import { useEffect } from 'react';
+import { animeLetter } from '../../utils';
 
 export default function MesProjets({ data }) {
+  useEffect(() => {
+    animeLetter();
+  }, []);
+
   return (
     <>
       <Head>
@@ -17,7 +23,7 @@ export default function MesProjets({ data }) {
       <div className="innerWrapper">
         <main>
           <h3>Je vous présente</h3>
-          <h1 className={styles.h1Important}>Mes projets</h1>
+          <h1 className={`${styles.h1Important}  animate`}>Mes projets</h1>
           <section className={styles.projets}>
             {data.map((project, index) => {
               const flexDirection = index % 2 === 0 ? 'row' : 'row-reverse';

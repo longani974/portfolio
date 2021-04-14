@@ -5,12 +5,17 @@ import Button from '../../components/ui/button/Button';
 import styles from './styles.module.css';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { animeLetter } from '../../utils';
 
 export default function Contact() {
   const minLengthMsg = 10;
   const maxLengthMsg = 2000;
   const maxLengthTitre = 60;
+
+  useEffect(() => {
+    animeLetter();
+  }, []);
 
   const sendingMsg = {
     progress: <span>Votre message est en cours d'acheminement...</span>,
@@ -68,7 +73,7 @@ export default function Contact() {
         <div className="innerWrapper">
           <main>
             <h3>N'hésitez pas à</h3>
-            <h1 className={styles.h1Important}>Me contacter</h1>
+            <h1 className={`${styles.h1Important}  animate`}>Me contacter</h1>
             <form
               className={styles.form}
               onSubmit={handleSubmit(submitHandler)}

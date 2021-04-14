@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import Button from '../components/ui/button/Button';
 import ManAndCatImage from '../components/ui/manAndCatImage/ManAndCatImage';
 import Link from 'next/link';
+import { animeLetter } from '../utils';
 
 export default function Home() {
   // Ajoute l'image en background à body et on le supprime lorsque le composant est démonté
@@ -19,33 +20,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    let istag = false;
-    const lettersSelector = document.querySelector('.animate');
-
-    const letters = lettersSelector.innerHTML.split('');
-    const animateLetters = letters.map((letter) => {
-      if (letter === '<') {
-        istag = true;
-        return letter;
-      }
-
-      if (letter === '>') {
-        istag = false;
-        return letter;
-      }
-
-      if (!istag) {
-        if (letter === ' ') {
-          return (letter = `<span class="space">${letter}</span>`);
-        }
-
-        if (letter !== ' ') {
-          return (letter = `<span class=animateLetter>${letter}</span>`);
-        }
-      } else return letter;
-    });
-
-    lettersSelector.innerHTML = animateLetters.join('');
+    animeLetter();
   }, []);
 
   return (
@@ -80,13 +55,6 @@ export default function Home() {
           </div>
           <div className={styles.manAndCatImage}>
             <ManAndCatImage />
-            {/* <div className={styles.imgPc}>
-              <Image
-                src="/images/Desktop-Dark-Active.png"
-                width={239}
-                height={168}
-              />
-            </div> */}
           </div>
         </main>
       </div>

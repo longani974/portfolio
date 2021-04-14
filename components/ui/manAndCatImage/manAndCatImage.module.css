@@ -50,6 +50,10 @@
   animation-delay: 1.9s;
 }
 
+.ecran:hover {
+  cursor: pointer;
+}
+
 @keyframes clignement {
   0% {
     transform: scaleY(1);

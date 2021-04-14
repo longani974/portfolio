@@ -35,6 +35,7 @@ a {
 }
 
 .animateLetter:hover {
+  color: var(--primaryColor);
   transform: translateY(-15px);
 }
 
