@@ -47,7 +47,7 @@ export default function MesProjets({ data }) {
             className={styles.scrollTopBtn}
             variants={fromRightVariants}
           >
-            <a href="#">
+            <a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <Image
                 src="/images/scroll-top-btn.png"
                 width={94}

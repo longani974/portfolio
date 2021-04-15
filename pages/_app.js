@@ -3,7 +3,7 @@ import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
 
 // The handler to smoothly scroll the element into view
-const handExitComplete = () => {
+const handleExitComplete = () => {
   if (typeof window !== 'undefined') {
     // Get the hash from the url
     const hashId = window.location.hash;
@@ -29,7 +29,7 @@ const handExitComplete = () => {
 function MyApp({ Component, pageProps, router }) {
   return (
     <Layout>
-      <AnimatePresence exitBeforeEnter onExitComplete={handExitComplete}>
+      <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
     </Layout>
