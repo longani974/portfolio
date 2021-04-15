@@ -6,9 +6,12 @@ function ManAndCatImage() {
 
   function goToProjectHandler(e) {
     const ecran = document.querySelector(`.${styles.ecran}`);
+    // We retrieve the css values of the element ecran
     const compStyles = window.getComputedStyle(ecran);
+    // We retreive the value of fill
     const param = compStyles.getPropertyValue('fill');
 
+    // We choose the right route corresponding to the image #id on which we clicked
     switch (param) {
       case 'url("#image1")':
         router.push('/mes-projets#todo-app');

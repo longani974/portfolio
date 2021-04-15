@@ -14,6 +14,7 @@ import { fromLeftVariants, fromRightVariants } from '../../constants/motions';
 
 export default function MesProjets({ data }) {
   useEffect(() => {
+    // animation on hover h1
     animeLetter();
   }, []);
 
@@ -83,8 +84,13 @@ export default function MesProjets({ data }) {
               );
             })}
           </motion.section>
-          <CardMeContacter className={styles.cardContact} />
-          <div className={styles.scrollTopBtn}>
+          <motion.div variants={fromLeftVariants}>
+            <CardMeContacter className={styles.cardContact} />
+          </motion.div>
+          <motion.div
+            className={styles.scrollTopBtn}
+            variants={fromRightVariants}
+          >
             <a href="#">
               <Image
                 src="/images/scroll-top-btn.png"
@@ -92,7 +98,7 @@ export default function MesProjets({ data }) {
                 height={94}
               ></Image>
             </a>
-          </div>
+          </motion.div>
         </motion.main>
       </div>
     </>

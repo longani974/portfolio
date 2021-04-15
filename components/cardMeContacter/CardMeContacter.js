@@ -9,7 +9,7 @@ function CardMeContacter() {
         Mon profil vous intéresse?{' '}
         <span style={{ whiteSpace: 'nowrap' }}>Parlons-en</span>.
       </p>
-      <Link href="/contact" scroll={false}>
+      <Link href="/contact#" scroll={false}>
         <a>
           <Button>Me contacter</Button>
         </a>

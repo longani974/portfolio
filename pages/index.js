@@ -22,6 +22,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    // animation on hover h1
     animeLetter();
   }, []);
 

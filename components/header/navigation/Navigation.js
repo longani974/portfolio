@@ -39,12 +39,17 @@ function Navigation() {
       >
         <NavBar />
       </motion.div>
-      <div className={styles.navBurger}>
+      <motion.div
+        className={styles.navBurger}
+        variants={navBarVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <Burger
           burgerIsActive={burgerIsActive}
           toggleBurgerIsActive={toggleBurgerIsActive}
         />
-      </div>
+      </motion.div>
       <div className={styles.navModal}>
         <NavModal
           burgerIsActive={burgerIsActive}

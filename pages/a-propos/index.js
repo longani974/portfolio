@@ -5,11 +5,14 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { animeLetter } from '../../utils';
+import { motion } from 'framer-motion';
+import { fromLeftVariants, fromRightVariants } from '../../constants/motions';
 
 export default function APropos() {
   const router = useRouter();
 
   useEffect(() => {
+    // animation on hover h1
     animeLetter();
   }, []);
 
@@ -20,10 +23,17 @@ export default function APropos() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="innerWrapper">
-        <main>
-          <h3>La question existentiel</h3>
-          <h1 className={`${styles.h1Important}  animate`}>Qui suis-je?</h1>
-          <div className={styles.container}>
+        <motion.main initial="hidden" animate="visible" exit="hidden">
+          <motion.h3 variants={fromLeftVariants}>
+            La question existentiel
+          </motion.h3>
+          <motion.h1
+            variants={fromLeftVariants}
+            className={`${styles.h1Important}  animate`}
+          >
+            Qui suis-je?
+          </motion.h1>
+          <motion.div className={styles.container} variants={fromRightVariants}>
             <div className={styles.contenu}>
               <p>
                 Je suis Sylvain Rivière, développerur web autodidacte spécialisé
@@ -51,8 +61,8 @@ export default function APropos() {
             <div className={styles.portrait}>
               <Image src="/images/portrait.png" width={400} height={400} />
             </div>
-          </div>
-        </main>
+          </motion.div>
+        </motion.main>
       </div>
     </>
   );

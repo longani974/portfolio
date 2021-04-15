@@ -7,6 +7,9 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { animeLetter } from '../../utils';
+import { motion } from 'framer-motion';
+
+import { fromLeftVariants, fromRightVariants } from '../../constants/motions';
 
 export default function Contact() {
   const minLengthMsg = 10;
@@ -14,6 +17,9 @@ export default function Contact() {
   const maxLengthTitre = 60;
 
   useEffect(() => {
+    // In my-projects a link has the option scroll = false so as not to break the transition page.
+    // We therefore force the scroll at the top. Otherwise the page loads with a scroll at the bottom.
+    window.scrollTo(0, 0);
     animeLetter();
   }, []);
 
@@ -71,12 +77,18 @@ export default function Contact() {
       </Head>
       <div className={styles.wrapper}>
         <div className="innerWrapper">
-          <main>
-            <h3>N'hésitez pas à</h3>
-            <h1 className={`${styles.h1Important}  animate`}>Me contacter</h1>
-            <form
+          <motion.main initial="hidden" animate="visible" exit="hidden">
+            <motion.h3 variants={fromLeftVariants}>N'hésitez pas à</motion.h3>
+            <motion.h1
+              variants={fromLeftVariants}
+              className={`${styles.h1Important}  animate`}
+            >
+              Me contacter
+            </motion.h1>
+            <motion.form
               className={styles.form}
               onSubmit={handleSubmit(submitHandler)}
+              variants={fromRightVariants}
             >
               <label htmlFor="email">Votre Email</label>
 
@@ -154,8 +166,8 @@ export default function Contact() {
               <div className={styles.image}>
                 <Image src="/images/contact.png" width={564} height={216} />
               </div>
-            </form>
-          </main>
+            </motion.form>
+          </motion.main>
         </div>
       </div>
     </>
