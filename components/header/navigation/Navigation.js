@@ -4,33 +4,55 @@ import Burger from './Burger/Burger';
 import NavBar from './NavBar';
 import styles from './navigation.module.css';
 import NavModal from './navModal/NavModal';
+import { motion } from 'framer-motion';
+
+const navBarVariants = {
+  hidden: {
+    opacity: 0,
+    y: 0,
+  },
+  visible: {
+    opacity: 1,
+    y: [0, -10, 0],
+    transition: {
+      duration: 0.4,
+      delay: 0.4,
+      ease: 'easeOut',
+    },
+  },
+};
 
 function Navigation() {
-    const [burgerIsActive, setBurgerIsActive] = useState(false);
+  const [burgerIsActive, setBurgerIsActive] = useState(false);
 
-    function toggleBurgerIsActive() {
-        setBurgerIsActive((prevState) => !prevState);
-    }
+  function toggleBurgerIsActive() {
+    setBurgerIsActive((prevState) => !prevState);
+  }
 
-    return (
-        <>
-            <div className={styles.navBar}>
-                <NavBar />
-            </div>
-            <div className={styles.navBurger}>
-                <Burger
-                    burgerIsActive={burgerIsActive}
-                    toggleBurgerIsActive={toggleBurgerIsActive}
-                />
-            </div>
-            <div className={styles.navModal}>
-                <NavModal
-                    burgerIsActive={burgerIsActive}
-                    toggleBurgerIsActive={toggleBurgerIsActive}
-                />
-            </div>
-        </>
-    );
+  return (
+    <>
+      <motion.div
+        className={styles.navBar}
+        variants={navBarVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <NavBar />
+      </motion.div>
+      <div className={styles.navBurger}>
+        <Burger
+          burgerIsActive={burgerIsActive}
+          toggleBurgerIsActive={toggleBurgerIsActive}
+        />
+      </div>
+      <div className={styles.navModal}>
+        <NavModal
+          burgerIsActive={burgerIsActive}
+          toggleBurgerIsActive={toggleBurgerIsActive}
+        />
+      </div>
+    </>
+  );
 }
 
 export default Navigation;
