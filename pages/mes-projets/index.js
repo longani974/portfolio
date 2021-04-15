@@ -11,10 +11,11 @@ import { animeLetter } from '../../utils';
 
 import { motion } from 'framer-motion';
 import { fromLeftVariants, fromRightVariants } from '../../constants/motions';
+import CardsProjects from '../../components/cardProjects/CardsProjects';
 
 export default function MesProjets({ data }) {
   useEffect(() => {
-    // animation on hover h1
+    // animation on hover h1 used with className="animate"
     animeLetter();
   }, []);
 
@@ -37,52 +38,7 @@ export default function MesProjets({ data }) {
             className={styles.projets}
             variants={fromRightVariants}
           >
-            {data.map((project, index) => {
-              const flexDirection = index % 2 === 0 ? 'row' : 'row-reverse';
-
-              return (
-                <div
-                  className={styles.projet}
-                  id={project.id}
-                  key={index}
-                  style={{ '--flexDirection': flexDirection }}
-                >
-                  <div className={styles.imageContainer}>
-                    <Image
-                      className={styles.image}
-                      src={`/images/${project.img}`}
-                      alt={project.titre}
-                      // width={540}
-                      // height={540}
-                      layout="fill"
-                      objectFit="cover"
-                      // objectPosition="center"
-                    />
-                  </div>
-                  <div className={styles.contenu}>
-                    <h2 className={styles.title}>{project.titre}</h2>
-
-                    {project.text.map((paragraph, j) => (
-                      <p className={styles.paragraph} key={j}>
-                        {paragraph}
-                      </p>
-                    ))}
-
-                    <p className={styles.technologies}>
-                      Technologies: {project.technologies}
-                    </p>
-
-                    <a
-                      className={styles.btn}
-                      href={project.url}
-                      target="_blank"
-                    >
-                      <Button>Visiter</Button>
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
+            <CardsProjects data={data} />
           </motion.section>
           <motion.div variants={fromLeftVariants}>
             <CardMeContacter className={styles.cardContact} />

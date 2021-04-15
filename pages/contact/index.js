@@ -20,6 +20,7 @@ export default function Contact() {
     // In my-projects a link has the option scroll = false so as not to break the transition page.
     // We therefore force the scroll at the top. Otherwise the page loads with a scroll at the bottom.
     window.scrollTo(0, 0);
+    // animation on hover h1 used with className="animate"
     animeLetter();
   }, []);
 

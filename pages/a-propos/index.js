@@ -12,7 +12,7 @@ export default function APropos() {
   const router = useRouter();
 
   useEffect(() => {
-    // animation on hover h1
+    // animation on hover h1 used with className="animate"
     animeLetter();
   }, []);
 
