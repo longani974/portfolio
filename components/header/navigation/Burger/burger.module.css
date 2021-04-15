@@ -4,7 +4,7 @@
   border: none;
   outline: none;
   height: 20px;
-  background-color: none;
+  background-color: transparent;
 }
 
 .wrapperBurger {
