@@ -16,7 +16,7 @@
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   width: fit-content;
-  height: fit-content;
+  max-height: 96px;
   margin: 70px auto 70px;
   cursor: pointer;
 }
@@ -38,6 +38,7 @@
 
   .scrollTopBtn {
     width: 64px;
+    max-height: 64px;
     margin: 60px auto 60px;
   }
 }

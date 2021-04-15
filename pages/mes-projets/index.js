@@ -48,11 +48,7 @@ export default function MesProjets({ data }) {
             variants={fromRightVariants}
           >
             <a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <Image
-                src="/images/scroll-top-btn.png"
-                width={94}
-                height={94}
-              ></Image>
+              <Image src="/images/scroll.png" width={94} height={94} />
             </a>
           </motion.div>
         </motion.main>
