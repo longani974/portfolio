@@ -9,6 +9,9 @@ import CardMeContacter from '../../components/cardMeContacter/CardMeContacter';
 import { useEffect } from 'react';
 import { animeLetter } from '../../utils';
 
+import { motion } from 'framer-motion';
+import { fromLeftVariants, fromRightVariants } from '../../constants/motions';
+
 export default function MesProjets({ data }) {
   useEffect(() => {
     animeLetter();
@@ -21,10 +24,18 @@ export default function MesProjets({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="innerWrapper">
-        <main>
-          <h3>Je vous présente</h3>
-          <h1 className={`${styles.h1Important}  animate`}>Mes projets</h1>
-          <section className={styles.projets}>
+        <motion.main initial="hidden" animate="visible" exit="hidden">
+          <motion.h3 variants={fromLeftVariants}>Je vous présente</motion.h3>
+          <motion.h1
+            variants={fromLeftVariants}
+            className={`${styles.h1Important}  animate`}
+          >
+            Mes projets
+          </motion.h1>
+          <motion.section
+            className={styles.projets}
+            variants={fromRightVariants}
+          >
             {data.map((project, index) => {
               const flexDirection = index % 2 === 0 ? 'row' : 'row-reverse';
 
@@ -71,7 +82,7 @@ export default function MesProjets({ data }) {
                 </div>
               );
             })}
-          </section>
+          </motion.section>
           <CardMeContacter className={styles.cardContact} />
           <div className={styles.scrollTopBtn}>
             <a href="#">
@@ -82,7 +93,7 @@ export default function MesProjets({ data }) {
               ></Image>
             </a>
           </div>
-        </main>
+        </motion.main>
       </div>
     </>
   );

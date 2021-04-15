@@ -6,6 +6,8 @@ import Button from '../components/ui/button/Button';
 import ManAndCatImage from '../components/ui/manAndCatImage/ManAndCatImage';
 import Link from 'next/link';
 import { animeLetter } from '../utils';
+import { motion } from 'framer-motion';
+import { fromLeftVariants, fromRightVariants } from '../constants/motions';
 
 export default function Home() {
   // Ajoute l'image en background à body et on le supprime lorsque le composant est démonté
@@ -37,7 +39,13 @@ export default function Home() {
       </Head>
       <div className="innerWrapper">
         <main>
-          <div className={styles.titleBox}>
+          <motion.div
+            className={styles.titleBox}
+            variants={fromLeftVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+          >
             <h3>Bonjour, je suis Sylvain.</h3>
             <h1 className="animate">
               Développeur web{' '}
@@ -52,10 +60,16 @@ export default function Home() {
                 <Button>Mes projets</Button>
               </a>
             </Link>
-          </div>
-          <div className={styles.manAndCatImage}>
+          </motion.div>
+          <motion.div
+            className={styles.manAndCatImage}
+            variants={fromRightVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+          >
             <ManAndCatImage />
-          </div>
+          </motion.div>
         </main>
       </div>
     </>
