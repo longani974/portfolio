@@ -19,11 +19,8 @@ function CardsProjects({ data }) {
             className={styles.image}
             src={`/images/${project.img}`}
             alt={project.titre}
-            // width={540}
-            // height={540}
             layout="fill"
             objectFit="cover"
-            // objectPosition="center"
           />
         </div>
         <div className={styles.contenu}>

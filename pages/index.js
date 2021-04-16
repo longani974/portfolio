@@ -29,7 +29,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio de Sylvain Rivière</title>
+        <title>Sylvain Rivière - Développeur Web Front-End</title>
+        <meta
+          name="description"
+          content="Développeur web basé à l'Île de la Réunion. Je code votre site et votre application web avec une préférence pour ReactJS et NextJS. Venez découvrir mes projets."
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preload"

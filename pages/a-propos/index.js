@@ -19,7 +19,11 @@ export default function APropos() {
   return (
     <>
       <Head>
-        <title>Portfolio de Sylvain Rivière</title>
+        <title>Sylvain Rivière - développeur ReactJS NextJS</title>
+        <meta
+          name="description"
+          content="Je suis un développeur web front end habitant l'Île de la Réunion. Je travaille avec encore plus de motivation quand la technologie est du ReactJS ou du NextJS."
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="innerWrapper">
@@ -59,7 +63,12 @@ export default function APropos() {
               </a>
             </div>
             <div className={styles.portrait}>
-              <Image src="/images/portrait.png" width={400} height={400} />
+              <Image
+                src="/images/portrait.png"
+                alt="sylvain rivière dev web"
+                width={400}
+                height={400}
+              />
             </div>
           </motion.div>
         </motion.main>

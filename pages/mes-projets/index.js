@@ -22,7 +22,11 @@ export default function MesProjets({ data }) {
   return (
     <>
       <Head>
-        <title>Portfolio de Sylvain Rivière</title>
+        <title>Sylvain Rivière - Front-End - Mes Projets</title>
+        <meta
+          name="description"
+          content="Mes projets en développement web front end. Je vous propose mes services pour votre application ou site web. Découvrez mes projets pour vous faire une idée."
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="innerWrapper">
@@ -48,7 +52,12 @@ export default function MesProjets({ data }) {
             variants={fromRightVariants}
           >
             <a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <Image src="/images/scroll.png" width={94} height={94} />
+              <Image
+                src="/images/scroll.png"
+                alt="scroll to the top"
+                width={94}
+                height={94}
+              />
             </a>
           </motion.div>
         </motion.main>

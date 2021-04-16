@@ -73,7 +73,11 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Portfolio de Sylvain Rivière</title>
+        <title>Sylvain Rivière - Développeur web.</title>
+        <meta
+          name="description"
+          content="Contactez-moi si vous recherchez un développeur web front pour votre application ou votre site. J'aime les technologies hmtl css JavaScript ReactJS NextJS."
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.wrapper}>
@@ -165,7 +169,12 @@ export default function Contact() {
                 {msgStatutEnvoi}
               </div>
               <div className={styles.image}>
-                <Image src="/images/contact.png" width={564} height={216} />
+                <Image
+                  src="/images/contact.png"
+                  alt="illustration-robot-pc"
+                  width={564}
+                  height={216}
+                />
               </div>
             </motion.form>
           </motion.main>
