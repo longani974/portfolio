@@ -2,7 +2,7 @@
     {
         "titre": "Lost in space",
         "id": "lost-in-space",
-        "text": ["Lost in space est mon premier projet en JavaScript. Il s’agit d’un jeu où vous êtes à bord d’un petit vaisseau. Le but est de détruire les astéroides qui arrivent pour protéger le vaiseau mère.", "Grâce à se projet, j’ai appris énormément sur le fonctionnement de JavaScript. Les défis ont été nombreux, mais c’est avec ce jeu que j’ai appris le plus."],
+        "text": ["Lost in space est mon tout premier projet en JavaScript. Il s’agit d’un jeu où vous êtes à bord d’un petit vaisseau. Le but est de détruire les astéroides qui arrivent pour protéger le vaiseau mère.", "J’ai appris énormément sur le fonctionnement de JavaScript. Attention, c'est une version uniquement pour PC."],
         "technologies": "Vanilla JavaScript, Api Canvas",
         "img": "lost-in-space.png",
         "display": true,
