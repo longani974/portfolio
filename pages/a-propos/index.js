@@ -40,22 +40,22 @@ export default function APropos() {
           <motion.div className={styles.container} variants={fromRightVariants}>
             <div className={styles.contenu}>
               <p>
-                Je suis Sylvain Rivière, développerur web autodidacte spécialisé
+                Je suis Sylvain Rivière, développeur web autodidacte spécialisé
                 dans le front-end.{' '}
               </p>
               <p>
-                J’ai commencer à m’intéresser au code par simple curiosité fin
-                2019, mais très vite j’ai été pris par la passion. En recherche
-                de reconversion professionnel, j’ai tout de suite compris que je
-                devais creuser cette piste.
+                J’ai commencé à m’intéresser au code par simple curiosité fin
+                2019, mais très vite, j’ai été pris par la passion. En recherche
+                de reconversion professionnelle, j’ai tout de suite compris que
+                je devais creuser cette piste.
               </p>
               <p>
-                Depuis j’ai appris énormément, et je ne suis satisfait de mon
+                Depuis, j’ai appris énormément, et je ne suis satisfait de mon
                 code que lorsque le rendu final correspond exactement à la
                 maquette et au cahier des charges.
               </p>
               <p>
-                Je code essentielement en html, css, JavaScript, reactJS et le
+                Je code essentiellement en html, css, JavaScript, reactJS et le
                 framwork nextJS.
               </p>
               <a onClick={() => router.push('/contact')}>

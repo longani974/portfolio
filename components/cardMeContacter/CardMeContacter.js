@@ -6,7 +6,7 @@ function CardMeContacter() {
   return (
     <div className={styles.card}>
       <p>
-        Mon profil vous intéresse?{' '}
+        Mon profil vous intéresse ?{' '}
         <span style={{ whiteSpace: 'nowrap' }}>Parlons-en</span>.
       </p>
       <Link href="/contact#" scroll={false}>
