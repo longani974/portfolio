@@ -26,6 +26,8 @@
   padding-left: var(--spacingLeft);
   outline: none;
   transition: box-shadow 0.2s ease-out;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .form input:focus,
