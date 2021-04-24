@@ -11,7 +11,7 @@
 
 .manAndCatImage {
   max-width: 631px;
-  aspect-ratio: 631/384;
+  padding-top: 60.86%;
   margin-top: -150px;
   display: block;
   position: relative;
