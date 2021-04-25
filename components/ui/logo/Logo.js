@@ -20,14 +20,14 @@ const logoVariants = {
 
 function Logo() {
   return (
-    <div
+    <motion.div
       className={styles.logo}
       variants={logoVariants}
       initial="hidden"
       animate="visible"
     >
       <Link href="/">Sylvain Riviere</Link>
-    </div>
+    </motion.div>
   );
 }
 

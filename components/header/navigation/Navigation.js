@@ -31,15 +31,15 @@ function Navigation() {
 
   return (
     <>
-      <div
+      <motion.div
         className={styles.navBar}
         variants={navBarVariants}
         initial="hidden"
         animate="visible"
       >
         <NavBar />
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         className={styles.navBurger}
         variants={navBarVariants}
         initial="hidden"
@@ -49,7 +49,7 @@ function Navigation() {
           burgerIsActive={burgerIsActive}
           toggleBurgerIsActive={toggleBurgerIsActive}
         />
-      </div>
+      </motion.div>
       <div className={styles.navModal}>
         <NavModal
           burgerIsActive={burgerIsActive}
