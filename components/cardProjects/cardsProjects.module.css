@@ -42,7 +42,9 @@
 
   .imageContainer {
     width: 347px;
-    aspect-ratio: 347/442;
+    height: 442px;
+    /* aspect-ratio: 347/442; */
+    /* padding-top: 100%; */
   }
 
   .paragraph {
@@ -61,7 +63,7 @@
 
   .imageContainer {
     width: 100%;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
   }
 
   .contenu {
