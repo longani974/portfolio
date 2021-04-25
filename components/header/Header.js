@@ -17,7 +17,7 @@ const headerVariants = {
 
 function Header() {
   return (
-    <motion.div
+    <div
       className={styles.header}
       variants={headerVariants}
       initial="hidden"
@@ -27,7 +27,7 @@ function Header() {
         <Logo />
         <Navigation />
       </div>
-    </motion.div>
+    </div>
   );
 }
 
