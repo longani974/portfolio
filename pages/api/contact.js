@@ -17,9 +17,7 @@ export default async (req, res) => {
     const emailResponse = await transporter.sendMail({
       from: email,
       to: process.env.USER_GMAIL,
-      subject: `${
-        subject ? subject : 'Formulaire du portfolio'
-      }Formulaire du portfolio - ${titre}`,
+      subject: `${subject ? subject : 'Formulaire du portfolio'} - ${titre}`,
       html: `<p>Message en provenance du portfolio</p><br>
          <p>${titre}<br></p>
          <p>${message}<br></p>
